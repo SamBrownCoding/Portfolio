@@ -1,0 +1,54 @@
+.page {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.head_cover{
+    background-image: url('../Media/computer_background.jpg');
+    background-color: transparent;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 768px;
+    width: 100%;
+}
+
+.background_img{
+    background-attachment: fixed;
+} 
+
+.computer{
+    height: 768px;
+    width: 100%;
+    background-position: 0px 0px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(242, 86, 35, 0.9);
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
