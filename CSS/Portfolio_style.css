@@ -8,13 +8,15 @@
     transition: 0.5s;
 }
 
+/* HEADER */
+/*#region*/
 #head_cover {
     background-image: url('../Media/computer_background.jpg');
     background-color: transparent;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    height: 768px;
+    height: 100vh;
     width: 100%;
 }
 
@@ -24,7 +26,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 770px;
+    height: 100vh;
     background: rgba(242, 86, 35, 0.9);
 }
 
@@ -90,15 +92,21 @@
     text-decoration: none;
     padding: 5px 10px;
     font-size: 40px;
+    transition: transform .2s;
 }
 
 .top_social li a:hover {
-    color: teal;
+    color: #0e5959;
     cursor: pointer;
+    transform: scale(1.2);
 }
 
-.nav{
-    background-color: teal;
+/*#endregion */
+
+/* Navigation Bar */
+/*#region */
+.nav {
+    background-color: #0e5959;
     height: 60px;
 }
 
@@ -109,7 +117,7 @@
 }
 
 .navigationBar li {
-    display: inline;
+    display: inline-grid;
 }
 
 .navigationBar li a {
@@ -118,35 +126,153 @@
     color: #eee;
     display: inline-flex;
     text-decoration: none;
+    padding: 12px 12px;
 }
 
-.navigationBar li a:hover{
+.navigationBar li a:hover {
     background-color: #f25623;
-    border-radius: 10px;
+    border-radius: 0px;
+}
+
+/*#endregion */
+
+/* First Row */
+/*#region*/
+.about_ME {
+    font-family: "Kaushan Script", cursive;
+    margin-bottom: 5em;
+}
+
+.about_ME h1 {
+    margin-top: 2em;
 }
 
 
+.first_row .row {}
+
+.contact_Info{
+    margin-bottom: 4em;
+}
+
+.contact_Info ul {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    float: left;
+}
+
+.contact_Info li {
+    width: 100%;
+    float: left;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.contact_Info li .first-col {
+    font-family: "Space Mono", monospace;
+    width: 40%;
+    display: inline-block;
+    float: left;
+    color: #000;
+    font-weight: bold;
+}
+
+.contact_Info li .second-col {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    display: inline-block;
+    color: #002727;
+    opacity: .8;
+}
+
+.about h3 {
+    color: #000;
+    font-family: "Space Mono", Arial, serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.about p {
+    margin-bottom: 30px;
+}
+
+.social_About {
+    padding: 0;
+    margin: 0;
+}
+
+.social_About li {
+    list-style: none;
+    display: inline;
+}
+
+.social_About li a {
+    display: inline-flex;
+    text-decoration: none;
+    padding: 10px;
+    background: #0e5959;
+    color: #eee;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: transform .2s;
+}
+
+.social_About li a .fa-brands {
+    font-size: 25px;
+}
+
+.social_About li a:hover {
+    background: #f25623;
+    color: #0e5959;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+/*#endregion*/
+
+
+/* MEDIA QUERY */
+/*#region */
 @media (min-width: 1200px) {
-    .navigationBar li a{
+    .navigationBar li a {
         font-size: x-large;
-        padding: 0px 40px;
+        margin-inline: 50px;
+    }
+    .first_row .container {
+        width: 70%;
+    }
+    
+}
+
+@media (max-width: 1199px) {
+    .navigationBar li a {
+        font-size: larger;
+        margin-inline: 40px;
+        padding: 15px 10px 16px 10px;
     }
 }
 
 @media (max-width: 992px) {
-    .navigationBar li a{
-        padding: 15px 20px;
+    .navigationBar li a {
+        font-size: large;
+        margin-inline: 30px;
+        padding: 16px 10px 17px 10px;
     }
 }
 
 @media (max-width: 768px) {
     .navigationBar li a {
-        padding: 15px 20px;
+        font-size: medium;
+        margin-inline: 20px;
+        padding: 18px 10px 18px 10px;
     }
 }
 
 @media (max-width:576px) {
     .navigationBar li a {
-        padding: 10px 15px;
+        font-size: small;
+        margin-inline: 5px;
+        padding: 20px 10px 20px 10px;
     }
 }
+
+/*#endregion */
