@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -152,9 +152,9 @@ html{
 }
 
 
-.first_row .row {}
+.first_row {}
 
-.contact_Info{
+.contact_Info {
     margin-bottom: 4em;
 }
 
@@ -231,10 +231,45 @@ html{
     cursor: pointer;
     transform: scale(1.2);
 }
+
 /*#endregion*/
 
 /*SECOND ROW */
 /*#region*/
+.second_row {
+    margin-bottom: 4em;
+}
+
+.skill_title {
+    font-family: "Kaushan Script", cursive;
+    margin-bottom: 5em;
+}
+
+.skill_title h1 {
+    margin-top: 2em;
+}
+
+.skills_name ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.skills_name li {
+    width: 100%;
+    float: left;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.skills_name li .skill-col {
+    font-family: "Space Mono", monospace;
+    width: 40%;
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+}
+
 
 @keyframes load {
     from {
@@ -261,7 +296,7 @@ html{
 }
 
 .bar {
-    background-color: rgb(14, 89, 89, 0.8);
+    background-color: rgb(242, 86, 35, 0.7);
     padding: 2px;
     border-radius: 15px;
     margin-bottom: 10px;
@@ -273,7 +308,7 @@ html{
 
 .bar::before {
     content: attr(data-skill);
-    background-color: #f25623;
+    background: linear-gradient(to right, #0e5959 15%, #2A70E8, #2AACE8 50%, #77C4E8);
     display: inline-grid;
     padding: 5px 0 5px 10px;
     border-radius: inherit;
@@ -293,7 +328,7 @@ html{
 */
 
 .bar.back-end::before {
-    width: calc(70% - 10px);
+    width: calc(75% - 10px);
 }
 
 .bar.front-end-HTML::before {
@@ -311,6 +346,50 @@ html{
 
 /*#endregion*/
 
+/* THIRD ROW PORTFOLIO */
+/*#region*/
+.third_row {
+    margin-bottom: 4em;
+}
+
+.portfolio {
+    font-family: "Kaushan Script", cursive;
+    margin-bottom: 5em;
+}
+
+.portfolio h1 {
+    margin-top: 2em;
+}
+
+.gallery img {
+    width: 300px;
+    /* You can set the dimensions to whatever you want */
+    height: 300px;
+    object-fit: cover;
+}
+
+.rounded-4{
+    border: #f25623 4px solid;
+}
+
+.airbox {
+    text-align: center;
+}
+
+.detroix {
+    text-align: center;
+}
+
+.kiosk {
+    text-align: center;
+}
+
+.desc {
+    text-align: center;
+}
+
+/*#endregion*/
+
 
 /* MEDIA QUERY */
 /*#region */
@@ -319,10 +398,19 @@ html{
         font-size: x-large;
         margin-inline: 50px;
     }
+
     .first_row .container {
         width: 70%;
     }
-    
+
+    .second_row .container {
+        width: 70%;
+    }
+
+    .third_row .container {
+        width: 70%;
+    }
+
 }
 
 @media (max-width: 1199px) {
