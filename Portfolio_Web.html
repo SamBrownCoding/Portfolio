@@ -52,7 +52,7 @@
                             <li><a class="link-underline-opacity-0" href="#About_row">About</a></li>
                             <li><a class="link-underline-opacity-0" href="#Skills">Skills</a></li>
                             <li><a class="link-underline-opacity-0" href="#Project">Project</a></li>
-                            <li><a class="link-underline-opacity-0" href="#contact">Contact</a></li>
+                            <li><a class="link-underline-opacity-0" href="#Contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -113,6 +113,7 @@
                             <li><span class="skill-col">C#</span></li>
                             <li><span class="skill-col">HTML5</span></li>
                             <li><span class="skill-col">CSS</span></li>
+                            <li><span class="skill-col">Bootstrap</span></li>
                             <li><span class="skill-col">JavaScript</span></li>
                         </ul>
                     </div>
@@ -120,6 +121,7 @@
                         <div class="bar back-end col-12" data-skill="75%"></div>
                         <div class="bar front-end-HTML col-12" data-skill="40%"></div>
                         <div class="bar front-end-CSS col-12" data-skill="40%"></div>
+                        <div class="bar front-end-BS col-12" data-skill="25%"></div>
                         <div class="bar JS col-12" data-skill="10%"></div>
                     </div>
                 </div>
@@ -132,20 +134,54 @@
                         <h1>Project</h1>
                     </div>
                 </div>
+                <div class="row gallery d-flex justify-content-center ">
+                    <div class="airbox col-12 col-xxl-4 d-flex justify-content-center flex-column"><a href="">
+                            <img src="Media/AirBox.png" class="round" alt="">
+                            <p class="desc desc-one ">
+                                Airbox Site
+                            </p>
+                        </a>
+                    </div>
+                    <div class="detroix col-12 col-xxl-4 d-flex justify-content-center flex-column">
+                        <a href=""><img src="Media/Detroix.png" class="round" alt="">
+                            <p class="desc desc-two">
+                                Detroix Site
+                            </p>
+                        </a>
+                    </div>
+                    <div class="kiosk col-12 col-xxl-4 d-flex justify-content-center flex-column">
+                        <a href=""><img src="Media/kiosk.png" class="round" alt="">
+                            <p class="desc desc-three">
+                                Kiosk back-end
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><!--END OF PROJECT THIRD ROW-->
+        <div class="fourth_row">
+            <div class="container">
                 <div class="row">
-                    <div class="gallery d-flex justify-content-center bord">
-                        <div class="airbox col-12 col-xxl-4">
-                            <img src="Media/AirBox.png" class="rounded-4" alt="">
-                            <div class="desc">Airbox Site</div>
-                        </div>
-                        <div class="detroix col-12 col-xxl-4">
-                            <img src="Media/Detroix.png" class="rounded-4" alt="">
-                            <div class="desc">Detroix Site</div>
-                        </div>
-                        <div class="kiosk col-12 col-xxl-4">
-                            <img src="Media/kiosk.png" class="rounded-4" alt="">
-                            <div class="desc">Kiosk back-end</div>
-                        </div>
+                    <div class="contact col-12 d-flex justify-content-center" id="Contact">
+                        <h1>Contact Me</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container second-Con">
+
+                <div class="row">
+                    <div class="contact-me d-flex justify-content-center col-12 col-xxl-12">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+
+                            <input type="hidden" name="access_key" value="43c24b35-d218-434c-b457-5cabe8eef50c">
+
+                            <input type="text" name="firstname" placeholder="First Name" required>
+                            <input type="text" name="lastname" placeholder="Last Name" required>
+                            <input type="email" name="email" placeholder="Your email.." required>
+                            <textarea name="message" placeholder="Your message.." required></textarea>
+                            <button type="submit">Submit Form</button>
+
+                        </form>
                     </div>
                 </div>
             </div>

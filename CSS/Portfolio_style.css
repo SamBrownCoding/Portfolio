@@ -148,6 +148,7 @@ html {
 }
 
 .about_ME h1 {
+    font-size: 50px;
     margin-top: 2em;
 }
 
@@ -246,6 +247,7 @@ html {
 }
 
 .skill_title h1 {
+    font-size: 50px;
     margin-top: 2em;
 }
 
@@ -296,8 +298,9 @@ html {
 }
 
 .bar {
-    background-color: rgb(242, 86, 35, 0.7);
+    background-color: rgb(0, 0, 0, 0.8);
     padding: 2px;
+    box-shadow: 1px 1px 5px #002727;
     border-radius: 15px;
     margin-bottom: 10px;
     font-size: 14px;
@@ -308,7 +311,7 @@ html {
 
 .bar::before {
     content: attr(data-skill);
-    background: linear-gradient(to right, #0e5959 15%, #2A70E8, #2AACE8 50%, #77C4E8);
+    background: linear-gradient(to right, #002727, #0e5959, #f25623 60%, #FC903F, #3FFCBC);
     display: inline-grid;
     padding: 5px 0 5px 10px;
     border-radius: inherit;
@@ -339,6 +342,10 @@ html {
     width: calc(40% - 10px);
 }
 
+.bar.front-end-BS::before{
+    width: calc(25% - 10px);
+}
+
 .bar.JS::before {
     width: calc(10% - 10px);
 }
@@ -358,37 +365,122 @@ html {
 }
 
 .portfolio h1 {
+    font-size: 50px;
     margin-top: 2em;
 }
 
 .gallery img {
-    width: 300px;
     /* You can set the dimensions to whatever you want */
-    height: 300px;
+    width: 300px;
+    height: 250px;
     object-fit: cover;
+    border-radius: 40px 40px 0px 0px;
 }
 
-.rounded-4{
-    border: #f25623 4px solid;
+.airbox a {
+    background: #002727;
+    color: #eee;
+    align-self: center;
+    text-decoration: none;
+    border-radius: 40px 40px 40px 40px;
+
+}
+
+.airbox a:hover {
+    /* border: #f25623 8px solid; */
+    background: #f25623;
+    color: #002727;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.detroix a {
+    background: #002727;
+    color: #eee;
+    align-self: center;
+    text-decoration: none;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.detroix a:hover {
+    /* border: #f25623 8px solid; */
+    background: #f25623;
+    color: #002727;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.kiosk a {
+    background: #002727;
+    color: #eee;
+    align-self: center;
+    text-decoration: none;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.kiosk a:hover {
+    /* border: #f25623 8px solid; */
+    background: #f25623;
+    color: #002727;
+    border-radius: 40px 40px 40px 40px;
 }
 
 .airbox {
+    margin-bottom: 2em;
     text-align: center;
+    
 }
 
 .detroix {
+    margin-bottom: 2em;
     text-align: center;
 }
 
 .kiosk {
+    margin-bottom: 2em;
     text-align: center;
 }
 
 .desc {
+    font-family: "Space Mono", monospace;
+    font-size: large;
+    font-weight: 400;
+    letter-spacing: 1px;
     text-align: center;
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0px 0px 40px 40px;
 }
 
 /*#endregion*/
+
+/* CONTACT */
+/*#region */
+input[type=text], textarea,[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+/*#endregion */
 
 
 /* MEDIA QUERY */
