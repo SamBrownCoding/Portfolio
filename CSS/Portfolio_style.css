@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.page {
+#page {
     position: relative;
     overflow-x: hidden;
     width: 100%;
@@ -10,6 +10,7 @@ html {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
+    background: #eee;
 }
 
 /* HEADER */
@@ -311,7 +312,7 @@ html {
 
 .bar::before {
     content: attr(data-skill);
-    background: linear-gradient(to right, #002727, #0e5959, #f25623 60%, #FC903F, #3FFCBC);
+    background: linear-gradient(to right, #0e5959, #f25623 75%);
     display: inline-grid;
     padding: 5px 0 5px 10px;
     border-radius: inherit;
@@ -342,7 +343,7 @@ html {
     width: calc(40% - 10px);
 }
 
-.bar.front-end-BS::before{
+.bar.front-end-BS::before {
     width: calc(25% - 10px);
 }
 
@@ -391,6 +392,14 @@ html {
     background: #f25623;
     color: #002727;
     border-radius: 40px 40px 40px 40px;
+    transform: scale(1.1);
+}
+
+.airbox a:active {
+    transform: scale(0.90);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
 }
 
 .detroix a {
@@ -406,6 +415,14 @@ html {
     background: #f25623;
     color: #002727;
     border-radius: 40px 40px 40px 40px;
+    transform: scale(1.1);
+}
+
+.detroix a:active {
+    transform: scale(0.90);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
 }
 
 .kiosk a {
@@ -421,12 +438,20 @@ html {
     background: #f25623;
     color: #002727;
     border-radius: 40px 40px 40px 40px;
+    transform: scale(1.1);
+}
+
+.kiosk a:active {
+    transform: scale(0.90);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
 }
 
 .airbox {
     margin-bottom: 2em;
     text-align: center;
-    
+
 }
 
 .detroix {
@@ -455,30 +480,118 @@ html {
 
 /* CONTACT */
 /*#region */
-input[type=text], textarea,[type=email] {
+.fourth_row {
+    margin-bottom: 4em;
+}
+
+.contact {
+    font-family: "Kaushan Script", cursive;
+    margin-bottom: 5em;
+}
+
+.contact h1 {
+    font-size: 50px;
+    margin-top: 2em;
+}
+
+.contact-me {
+    border-radius: 5px;
+    background-color: #f25623;
+    padding: 20px;
+    padding-top: 3em;
+    border-radius: 15px;
+}
+
+input[type=text],
+textarea,
+[type=email] {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #0e5959;
+    border-radius: 15px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: #04AA6D;
+    outline: none;
+}
+
+input[type=text]:focus {
+    box-shadow: 3px 2px 15px 1px rgba(28, 177, 177, 0.7);
+    border: 3px solid #0e5959;
+}
+
+input[type=email]:focus {
+    box-shadow: 3px 2px 15px 1px rgba(28, 177, 177, 0.7);
+    border: 3px solid #0e5959;
+}
+
+textarea:focus {
+    box-shadow: 3px 2px 15px 1px rgba(28, 177, 177, 0.7);
+    border: 3px solid #0e5959;
+}
+
+textarea {
+    height: 150px;
+}
+
+button[type=submit] {
+    margin-top: 10px;
+    background-color: #002727;
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
+}
+
+button[type=submit]:hover {
+    background-color: #0e5959;
+}
+
+button[type=submit]:active {
+    transform: scale(0.90);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+/*#endregion */
+
+/*FOOTER */
+/*#region */
+footer {
+    background-color: #0e5959;
+}
+
+.copyright p {
+    margin-bottom: 0px;
+    color: #eee;
+}
+
+.bottom_social ul {
+    list-style-type: none;
+    float: right;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+.bottom_social li {
+    display: inline;
+}
+
+.bottom_social li a {
+    color: #eee;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 30px;
+    transition: transform .2s;
+}
+
+.bottom_social li a:hover {
+    color: #f25623;
+    cursor: pointer;
+}
 
 /*#endregion */
 
@@ -500,6 +613,10 @@ input[type=text], textarea,[type=email] {
     }
 
     .third_row .container {
+        width: 70%;
+    }
+
+    .fourth_row .container {
         width: 70%;
     }
 
