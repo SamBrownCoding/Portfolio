@@ -154,11 +154,11 @@ html {
 /* First Row */
 /*#region*/
 .about_ME {
-    font-family: "Kaushan Script", cursive;
     margin-bottom: 5em;
 }
 
 .about_ME h1 {
+    font-family: "Kaushan Script", cursive;
     font-size: 50px;
     margin-top: 2em;
 }
@@ -253,11 +253,11 @@ html {
 }
 
 .skill_title {
-    font-family: "Kaushan Script", cursive;
     margin-bottom: 5em;
 }
 
 .skill_title h1 {
+    font-family: "Kaushan Script", cursive;
     font-size: 50px;
     margin-top: 2em;
 }
@@ -371,11 +371,11 @@ html {
 }
 
 .portfolio {
-    font-family: "Kaushan Script", cursive;
     margin-bottom: 5em;
 }
 
 .portfolio h1 {
+    font-family: "Kaushan Script", cursive;
     font-size: 50px;
     margin-top: 2em;
 }
@@ -495,11 +495,11 @@ html {
 }
 
 .contact {
-    font-family: "Kaushan Script", cursive;
     margin-bottom: 5em;
 }
 
 .contact h1 {
+    font-family: "Kaushan Script", cursive;
     font-size: 50px;
     margin-top: 2em;
 }
