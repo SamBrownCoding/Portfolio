@@ -43,7 +43,17 @@ html {
 .profile_thumb {
     background: url(../Media/Fake_picture.jpg);
     box-shadow: 3px 3px 10px 1px #671c04;
+    animation: 1.5s linear sun-down;
 }
+  
+  @keyframes sun-down {
+    to {
+      transform:translateY(0)
+    }
+    from {
+        transform: translateY(-1000px);
+    }
+  }
 
 #head_cover .profile_thumb {
     background-size: cover !important;
@@ -312,7 +322,7 @@ html {
 
 .bar::before {
     content: attr(data-skill);
-    background: linear-gradient(to right, #0e5959, #f25623 75%);
+    background: linear-gradient(to right, #0e5959, #f25623 95%);
     display: inline-grid;
     padding: 5px 0 5px 10px;
     border-radius: inherit;
