@@ -41,7 +41,7 @@ html {
 }
 
 .profile_thumb {
-    background: url(../Media/Fake_picture.jpg);
+    background: url(../Media/S.Brown.jpg);
     box-shadow: 3px 3px 10px 1px #671c04;
     animation: 1.5s linear sun-down;
 }
