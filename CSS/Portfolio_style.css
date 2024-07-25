@@ -43,7 +43,7 @@ html {
 .profile_thumb {
     background: url(../Media/S.Brown.jpg);
     box-shadow: 3px 3px 10px 1px #671c04;
-    animation: 1.5s linear sun-down;
+    animation: 1.3s linear sun-down;
 }
   
   @keyframes sun-down {
